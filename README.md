@@ -25,3 +25,16 @@ feature/2 (which require feature/1)
    2. if someone need changes from your `feature` branch, it is ok to create new branch based on your `feature` branch. but:
       1. it should be avoided.
       2. if someone see a commit with multiple PR references. the most bottom PR is the `feature-2` branch.
+   3. do not use the branching strategy (B)
+
+      it is because when the `feature/1` branch merge with the `main` branch, the `feature/2` PR will not recognize the merge. so the reviewer will have to review all the change, including change from the `feature/1` branch.
+
+```
+master
+|       ^      ^
+v       |      |
+feature/1      |
+|              |
+v              |
+feature/2 (which require feature/1)
+```
