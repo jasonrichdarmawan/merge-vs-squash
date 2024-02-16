@@ -4,6 +4,7 @@
 
    it is easier because we can review commits up to before the last squash i.e. a squashed commit from feature/2.
 
+```
 master
 |       ^
 v       |
@@ -11,6 +12,7 @@ feature/1
 |       ^
 v       |
 feature/2 (which require feature/1)
+```
 
 3. however, squash will combine multiple commits into 1 commit. the author will not be the one who create the code.
 
